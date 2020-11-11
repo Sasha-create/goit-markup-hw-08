@@ -76,7 +76,12 @@
       <section class="baner">
         <div class="container head-baner">
           <h1 class="head-logo-type">Эффективные решения для вашего бизнеса</h1>
-          <button class="primary-button" type="button">Заказать услугу</button>
+          <button class="primary-button" data-modal-open type="button">Заказать услугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-btn" data-modal-close>X</button>
+          </div>
         </div>
       </section>
 
@@ -577,5 +582,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
