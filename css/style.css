@@ -487,6 +487,7 @@ border-radius: 4px;
 }
 
 .content-photo {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-right: 30px;
@@ -504,6 +505,25 @@ border-radius: 4px;
   margin-right: 0px;
 }
 
+.studio-content {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
 
 .title {
   font-family: "Roboto", sans-serif;
@@ -877,6 +897,7 @@ box-sizing: border-box;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
   
+  
 
 }
 
@@ -915,7 +936,7 @@ box-sizing: border-box;
   height: auto;
   margin-top: 0;
   margin-bottom: 0;
-  
+ overflow: hidden; 
 }
 
 
@@ -958,8 +979,7 @@ box-sizing: border-box;
 
 /*overlay*/
 
-.img.item:hover .portfolio-actions
-.img.item:focus .portfolio-actions {
+.img.item:hover .portfolio-actions {
   opacity: 1;
 }
 
@@ -980,7 +1000,12 @@ box-sizing: border-box;
   background-color: rgba(33, 150, 243, 0.9);
 
   opacity: 0;
+  transform: translateY(-100%);
+  transition: transform var(--time) var(--timing-function);
+}
 
+.img.item:hover .product-thumb::before {
+  transform: translateY(0);
 }
 
 .portfolio-meta {
@@ -994,7 +1019,6 @@ box-sizing: border-box;
   bottom: 0;
 
   display: flex;
-  font: inherit;
   width: auto;
   height: auto;
   padding: 63px 24px;
