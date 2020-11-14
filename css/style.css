@@ -365,11 +365,23 @@ img {
 border-radius: 4px;
 }
 
+.icon-x {
+  display: flex;
+  fill: #000000;
+   
+}
+
 .modal-btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  top: 8px;
+  right: 8px;
+
   width: 30px;
   height: 30px;
+
   margin: 0;
   padding: 6px;
   background: #FFFFFF;
@@ -900,8 +912,8 @@ box-sizing: border-box;
 }
 
  
-.img-work .img-item:hover,
-.img-work .img-item:focus {
+.img-link .img-item:hover,
+.img-link .img-item:focus {
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -956,7 +968,7 @@ box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  width: auto;
+  width: 322px;
   height: auto;
 }
 
@@ -971,7 +983,7 @@ box-sizing: border-box;
   text-decoration-line: none;
   margin: 0;
   padding: 0;
-  width: auto;
+  width: 322px;
   height: auto;
 }
 
