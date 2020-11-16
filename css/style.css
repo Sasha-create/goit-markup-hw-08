@@ -947,7 +947,9 @@ box-sizing: border-box;
   height: auto;
   margin-top: 0;
   margin-bottom: 0;
-  
+  border: 1px solid #eeeeee;
+  border-top: none;
+  box-sizing: border-box;
 }
 
 
@@ -1006,9 +1008,7 @@ box-sizing: border-box;
 
 .portfolio-meta {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
-  box-sizing: border-box;
+ 
 }
 
 .portfolio-actions {
