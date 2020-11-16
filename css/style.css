@@ -941,13 +941,13 @@ box-sizing: border-box;
 }
 
 .img-item {
-  position: relative;
+  
   display: block;
   width: 370px;
   height: auto;
   margin-top: 0;
   margin-bottom: 0;
- overflow: hidden; 
+  
 }
 
 
@@ -990,38 +990,15 @@ box-sizing: border-box;
 
 /*overlay*/
 
-.img.item:hover .portfolio-actions, 
-.img.item:focus .portfolio-actions {
-  transition: transform var(--time) var(--timing-function);
-  background: rgba(33, 150, 243, 0.9);
-  /*opacity: 1;*/
-}
-
-.product-thumb:hover::before, 
-.product-thumb:focus::before {
-  transition: transform var(--time) var(--timing-function);
-  /*opacity: 1;*/
-}
 
 .product-thumb {
   position: relative;
   overflow: hidden;
- 
-}
-
-.product-thumb::before {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  transform: translateY(-100%);
-  transition: transform var(--time) var(--timing-function);
   
 }
 
-.img-item:hover .product-thumb::before,
-.img-item:focus .product-thumb::before {
+.img-item:hover .product-thumb,
+.img-item:focus .product-thumb {
   opacity: 1;
   transform: translateY(0);
   transition: transform var(--time) var(--timing-function);
@@ -1029,31 +1006,30 @@ box-sizing: border-box;
 
 .portfolio-meta {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  box-sizing: border-box;
 }
 
 .portfolio-actions {
   position: absolute;
-  width: auto;
-  height: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 63px 24px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition: transform var(--time) var(--timing-function);
-  opacity: 0;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 1.55;
+    height: 100%;
+    padding: 63px 24px;
+    color: var(--accent-color);
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform var(--time) var(--timing-function);
 }
 
 .img-item:hover .portfolio-actions {
   opacity: 1;
   transform: translateY(0);
+  transition-duration: 250ms;
   transition: transform var(--time) var(--timing-function);
   color: #ffffff;
  }
