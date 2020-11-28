@@ -1,0 +1,75 @@
+.flex-photo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.flex-photo .content-box {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  margin-bottom: 0;
+  width: 270px;
+}
+
+.content-box:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.content-box::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 102px;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.icon-details::before {
+  background-image: url(../images/sputnik.svg);
+}
+
+.icon-punctuality::before {
+  background-image: url(../images/time.svg);
+}
+
+.icon-plan::before {
+  background-image: url(../images/notebook.svg);
+}
+
+.icon-tech::before {
+  background-image: url(../images/astronaut.svg);
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--head-text-color);
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}

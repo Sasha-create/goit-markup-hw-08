@@ -1,0 +1,52 @@
+/* head baner*/
+.container {
+  width: 1200px;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.baner {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--dark-background-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.head-baner {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.head-logo-type {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--top-nav-color);
+  display: inline-block;
+  width: 696px;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,70 @@
+/* clients*/
+
+.flex-clients {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  height: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding: auto;
+}
+
+.flex-clients .clients-list {
+  width: calc((100% - 150px) / 6);
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+.clients-list:nth-child(6n) {
+  margin-right: 0px;
+}
+
+.clients-list {
+  display: inline-block;
+  content: "";
+  width: 170px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+  margin-left: auto;
+  background: #e5e5e5;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: white;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-icon {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}

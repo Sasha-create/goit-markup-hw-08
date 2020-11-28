@@ -1,0 +1,79 @@
+.bottom-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 70px;
+}
+
+.address {
+  width: 231px;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer .email {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .phone {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link {
+  margin-top: 0;
+  margin-bottom: 9px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contacts-footer .location:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts-footer {
+  width: auto;
+  height: auto;
+}
+
+.footer-social {
+  width: 206px;
+  height: 80px;
+  margin-left: 0;
+  margin-right: 93px;
+  padding: 0;
+}
+
+.footer-header {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.footer-blocks {
+  display: flex;
+  align-items: baseline;
+}
