@@ -49,7 +49,7 @@
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/roboto-v20-latin_cyrillic-900.eot");
-  src: local("Roboto Black"), local("Roboto-Black"),
+  src: local("Roboto $title-text-color"), local("Roboto-$title-text-color"),
     url("../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix")
       format("embedded-opentype"),
     url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"),

@@ -1,9 +1,9 @@
 .body {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background: var(--primary-text-color);
-  color: var(--title-text-color);
+  background: $primary-text-color;
+  color: $title-text-color;
   margin: 0px;
 }
 

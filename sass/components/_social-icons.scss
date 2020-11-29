@@ -3,7 +3,7 @@
 .social-item {
   display: flex;
   justify-content: center;
-  background-color: var(--button-color);
+  background-color: $button-color;
   width: 206px;
   height: 44px;
   margin-left: 32px;
@@ -18,10 +18,15 @@
   align-items: center;
   border: 1px solid transparent;
   border-radius: 50%;
-  color: var(--icon-color);
-  background-color: var(--button-color);
+  color: $icon-color;
+  background-color: $button-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .social-list {
@@ -37,17 +42,12 @@
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-color);
+  fill: $icon-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--button-color);
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: $button-color;
+  }
 }

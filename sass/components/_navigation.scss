@@ -19,6 +19,8 @@
 }
 
 .site-nav .link {
+  @extend %link;
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -44,31 +46,41 @@
 /* Site nav*/
 
 .site-nav .link {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--head-text-color);
+  color: $head-text-color;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .contact-nav {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: $title-text-color;
 
   display: flex;
   margin-left: auto;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  & .link:hover,
+  & .link:focus {
+    color: $accent-color;
+  }
 }
 
 .site-nav .link.current {
@@ -83,7 +95,7 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   margin-left: auto;
   margin-right: auto;
   bottom: 0;
@@ -93,37 +105,7 @@
 }
 
 .site-nav .current {
-  color: var(--accent-color);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.contact-nav .link:hover,
-.contact-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.email:hover .envelope,
-.email:focus .envelope {
-  fill: var(--accent-color);
-}
-
-.phone:hover .smartphone,
-.phone:focus .smartphone {
-  fill: var(--accent-color);
-}
-
-.email:hover,
-.email:focus {
-  fill: var(--accent-color);
-}
-
-.phone:hover,
-.phone:focus {
-  fill: var(--accent-color);
+  color: $accent-color;
 }
 
 .email {
@@ -131,6 +113,15 @@
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+  &:hover .envelope,
+  &:focus .envelope {
+    fill: $accent-color;
+  }
 }
 
 .phone {
@@ -138,6 +129,16 @@
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .smartphone,
+  &:focus .smartphone {
+    fill: $accent-color;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 .envelope {

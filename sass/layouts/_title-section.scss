@@ -1,25 +1,25 @@
 .section-title {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family
   font-weight: 700;
   font-size: 36px;
   line-height: 0.85;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $head-text-color;
   margin-top: 0;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: 0;
   display: flex;
   justify-content: center;
-}
 
-.section-title .center {
-  text-align: center;
-}
+  & .center {
+    text-align: center;
+  }
 
-.section-title,
-.title {
-  color: var(--head-text-color);
+  &,
+  .title {
+    color: $head-text-color;
+  }
 }
 
 .flex-box {
@@ -37,14 +37,14 @@
   margin-bottom: 0;
   max-width: 370px;
   height: auto;
-}
 
-.content-photo {
-  width: calc((100% - 60px) / 3);
-}
+  & {
+    width: calc((100% - 60px) / 3);
+  }
 
-.content-photo:nth-child(3n) {
-  margin-right: 0px;
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 
 .studio-content {
@@ -54,14 +54,14 @@
   left: 0;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family
   font-weight: 700;
   font-size: 14px;
   line-height: 0.87;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $top-nav-color;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 27px;
