@@ -19,8 +19,8 @@
   color: $top-nav-color;
   border-radius: 50%;
   background-color: $footer-social-link
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
    &:hover,
    &:focus {
@@ -32,8 +32,8 @@
   width: 20px;
   height: 20px;
   fill: $top-nav-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {

@@ -43,8 +43,8 @@
   height: auto;
   margin-top: 0;
   margin-bottom: 0;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   & img {
     display: block;
@@ -95,8 +95,8 @@
   .img-item:focus & {
     opacity: 1;
     transform: translateY(0);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
   }
 }
 
@@ -118,18 +118,18 @@
   height: 100%;
   padding: 63px 24px;
   color: $accent-color;
-  background: rgba(33, 150, 243, 0.9);
+  background: $overlay-color;
 
   transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   .img-item:hover &,
   .img-item:focus & {
     opacity: 1;
     transform: translateY(0);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: white;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+    color: $top-nav-color;
   }
 }

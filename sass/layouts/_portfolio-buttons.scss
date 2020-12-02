@@ -13,8 +13,8 @@
   padding: 6px 22px;
   border: 1px solid transparent;
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {

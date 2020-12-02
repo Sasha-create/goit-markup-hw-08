@@ -20,8 +20,8 @@
   border-radius: 50%;
   color: $icon-color;
   background-color: $button-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -43,8 +43,8 @@
   width: 20px;
   height: 20px;
   fill: $icon-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   .social-link:hover &,
   .social-link:focus & {

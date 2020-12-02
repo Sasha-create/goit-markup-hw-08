@@ -53,8 +53,8 @@
   letter-spacing: 0.02em;
   color: $head-text-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -74,8 +74,8 @@
   display: flex;
   margin-left: auto;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   & .link:hover,
   & .link:focus {
@@ -100,8 +100,8 @@
   margin-right: auto;
   bottom: 0;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 }
 
 .site-nav .current {
@@ -111,8 +111,8 @@
 .email {
   display: flex;
   align-items: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -127,8 +127,8 @@
 .phone {
   display: flex;
   align-items: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover .smartphone,
   &:focus .smartphone {
@@ -157,8 +157,8 @@
   background-repeat: no-repeat;
   background-position: center;
   fill: currentColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 }
 
 .smartphone {
@@ -178,6 +178,6 @@
   background-repeat: no-repeat;
   background-position: center;
   fill: currentColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 }

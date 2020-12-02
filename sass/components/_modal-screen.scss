@@ -9,8 +9,8 @@
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   opacity: 1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
   visibility: visible;
 }
 
@@ -35,7 +35,7 @@
   padding: 40px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $transition-duration $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -66,8 +66,8 @@
 .icon-x {
   display: flex;
   fill: $head-text-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -145,7 +145,7 @@
 
   /*transform: translateY(-50%);*/
   transform: translateY(-40px) translateX(-50px);
-  transition: transform 250ms linear;
+  transition: transform $transition-duration linear;
 }
 
 .form-input {
@@ -160,8 +160,8 @@
   border-radius: 4px;
   outline: none;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -180,8 +180,8 @@
   display: inline-block;
 
   fill: $head-text-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
   background-color: $top-nav-color;
 
   .form-field:hover > & {
@@ -210,8 +210,8 @@
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -228,7 +228,7 @@
 
   /*transform: translateY(-50%);*/
   transform: translateY(-85px) translateX(-50px);
-  transition: transform 250ms linear;
+  transition: transform $transition-duration linear;
 }
 
 .checkbox {
@@ -265,8 +265,8 @@
   border-radius: 2px;
   border: 2px solid $title-text-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   .checkbox:checked + & {
     border-color: transparent;
@@ -303,8 +303,8 @@
   color: $top-nav-color;
   background-color: $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {

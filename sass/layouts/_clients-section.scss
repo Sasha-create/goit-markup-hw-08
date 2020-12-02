@@ -46,9 +46,9 @@
   border: 1px solid $icon-color;
   box-sizing: border-box;
   border-radius: 4px;
-  background-color: white;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: $top-nav-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   &:hover,
   &:focus {
@@ -60,8 +60,8 @@
   width: 44px;
   height: 44px;
   fill: $icon-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
   .clients-link:hover &,
   .clients-link:focus & {
