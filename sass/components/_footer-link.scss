@@ -26,9 +26,10 @@
   padding: 10px 20px;
 
   background-color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid $border;
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));*/
   border-radius: 4px;
 }
 
@@ -73,13 +74,8 @@
   margin-left: 10px;
   margin-right: 0;
   fill: $top-nav-color;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
+}
 
-  &:hover,
-  &:focus {
-    color: $top-nav-color;
-    fill: $accent-color;
-    cursor: pointer;
-  }
+.icon-plane {
+  fill: $top-nav-color;
 }

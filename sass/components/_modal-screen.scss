@@ -270,7 +270,7 @@
 
   .checkbox:checked + & {
     border-color: transparent;
-    background: #2196f3;
+    background: $accent-color;
     border-radius: 2px;
     background-image: url("../images/checkbox.svg");
     background-repeat: no-repeat;
