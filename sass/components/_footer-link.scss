@@ -8,7 +8,7 @@
 }
 
 .footer-blocks-email {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   content: "";
   align-items: center;
@@ -52,18 +52,17 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: $top-nav-color;
-  background-color: $accent-color;
+  fill: $accent-color;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   &:hover,
   &:focus {
     color: $top-nav-color;
-    background-color: $accent-color;
+    fill: $accent-color;
     cursor: pointer;
   }
 }
@@ -74,8 +73,13 @@
   margin-left: 10px;
   margin-right: 0;
   fill: $top-nav-color;
-}
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.icon-plane {
-  fill: $top-nav-color;
+  &:hover,
+  &:focus {
+    color: $top-nav-color;
+    fill: $accent-color;
+    cursor: pointer;
+  }
 }
