@@ -14,9 +14,9 @@
   margin-right: auto;
 
   & a {
+    list-style: none;
     text-decoration: none;
     color: $top-nav-color;
-    letter-spacing: $letter-spacing;
   }
 }
 

@@ -75,9 +75,8 @@
 }
 
 .modal-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered-flex;
+
   position: absolute;
   top: 8px;
   right: 8px;
@@ -231,20 +230,12 @@
 }
 
 .checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
+  @extend %checkbox;
 }
 
 .label-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered-flex;
+
   margin-top: 0;
   margin-bottom: 30px;
   font-family: $font-family;
@@ -277,9 +268,8 @@
 }
 
 .modal-btn-send {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered-flex;
+
   text-align: center;
   margin: auto;
   padding: 10px 55px;

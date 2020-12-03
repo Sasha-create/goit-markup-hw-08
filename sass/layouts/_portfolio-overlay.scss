@@ -27,14 +27,14 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
-}
 
-.img-link:nth-child(3n) {
-  margin-right: 0;
-}
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
-.img-link:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
 .img-item {

@@ -1,19 +1,16 @@
 .logo {
-  font-family: $logo-font-family;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: $letter-spacing;
-  color: $head-text-color;
-}
-
-.logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
   width: 145px;
   height: auto;
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: $letter-spacing;
+  color: $head-text-color;
 }
 
 .logo-web {

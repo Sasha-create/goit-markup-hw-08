@@ -1,9 +1,8 @@
 .menu {
-  display: flex;
-  justify-content: center;
+  @extend %centered-flex;
 }
 
-.site-nav .menu-item :last-child {
+.site-nav .menu-item:last-child {
   margin-right: 0;
 }
 
@@ -19,10 +18,13 @@
 }
 
 .site-nav .link {
+  @extend %link;
+
   display: block;
+  width: auto;
+  height: 80px;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding: auto;
 }
 
 .menu .menu-item + .menu-item {
@@ -82,7 +84,7 @@
 
 .site-nav .link.current {
   position: relative;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .site-nav .link.current::after {
@@ -115,10 +117,6 @@
   &:focus {
     fill: $accent-color;
   }
-  &:hover .envelope,
-  &:focus .envelope {
-    fill: $accent-color;
-  }
 }
 
 .phone {
@@ -126,11 +124,6 @@
   align-items: center;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
-
-  &:hover .smartphone,
-  &:focus .smartphone {
-    fill: $accent-color;
-  }
 
   &:hover,
   &:focus {
@@ -156,6 +149,11 @@
   fill: currentColor;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
+
+  .email:hover &,
+  .email:focus & {
+    fill: $accent-color;
+  }
 }
 
 .smartphone {
@@ -177,4 +175,9 @@
   fill: currentColor;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
+
+  .phone:hover &,
+  .phone:focus & {
+    fill: $accent-color;
+  }
 }

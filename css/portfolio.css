@@ -1,3 +1,9 @@
+.link, .site-nav .link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .hidden-header {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
@@ -9,30 +15,18 @@
   overflow: hidden;
 }
 
-/*%visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+.list {
   padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  margin: 0;
+  list-style: none;
 }
 
-
-
-%centered-flex {
+.menu, .primary-button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-%list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}*/
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
@@ -90,18 +84,6 @@
   margin: 0px;
 }
 
-.link {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
 /*Style for index.html*/
 html {
   box-sizing: border-box;
@@ -141,26 +123,6 @@ img {
   margin-right: auto;
 }
 
-.hidden-header {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
-  padding: 0px;
-  border: 0px;
-  height: 0px;
-  width: 0px;
-  overflow: hidden;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
 .logo {
   display: block;
   padding-top: 24px;
@@ -168,6 +130,12 @@ img {
   margin-right: 93px;
   width: 145px;
   height: auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .logo-web {
@@ -179,12 +147,7 @@ img {
   color: #2196f3;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-}
-
-.site-nav .menu-item :last-child {
+.site-nav .menu-item:last-child {
   margin-right: 0;
 }
 
@@ -201,9 +164,10 @@ img {
 
 .site-nav .link {
   display: block;
+  width: auto;
+  height: 80px;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding: auto;
 }
 
 .menu .menu-item + .menu-item {
@@ -258,7 +222,7 @@ img {
 
 .site-nav .link.current {
   position: relative;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .site-nav .link.current::after {
@@ -291,21 +255,11 @@ img {
   fill: #2196f3;
 }
 
-.email:hover .envelope,
-.email:focus .envelope {
-  fill: #2196f3;
-}
-
 .phone {
   display: flex;
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.phone:hover .smartphone,
-.phone:focus .smartphone {
-  fill: #2196f3;
 }
 
 .phone:hover, .phone:focus {
@@ -332,6 +286,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.email:hover .envelope,
+.email:focus .envelope {
+  fill: #2196f3;
+}
+
 .smartphone {
   display: inline-flex;
   justify-content: center;
@@ -352,24 +311,26 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.phone:hover .smartphone,
+.phone:focus .smartphone {
+  fill: #2196f3;
+}
+
 .primary-button {
+  text-align: center;
+  min-width: 200px;
+  min-height: 50px;
+  margin: auto;
+  padding: 10px 32px;
+  outline: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  align-items: center;
-  text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 200px;
-  min-height: 50px;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding: 10px 32px;
-  outline: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -634,19 +595,19 @@ img {
 }
 
 .head-logo-type {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
   display: inline-block;
+  text-align: center;
   width: 696px;
   height: auto;
   margin-top: 0;
   margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* section*/
@@ -885,9 +846,9 @@ img {
 }
 
 .footer a {
+  list-style: none;
   text-decoration: none;
   color: #ffffff;
-  letter-spacing: 0.03em;
 }
 
 .footer .container {
