@@ -1,24 +1,41 @@
-/*$primary-text-color: #757575;
-$title-text-color: #212121;
-$accent-color: #2196f3;
-$primary-white-color: $top-nav-color;
-$secondary-bg-color: #afb1b8;
+.hidden-header {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0px;
+  border: 0px;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
 
-$third-bg-color: rgba(47, 48, 58, 0.8);
-$button-bg-color:$hero-background-color;
+/*%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-$bgc-link-text: rgba(33, 150, 243, 0.9);
 
 
-$font-family: Roboto, sans-serif;
-$logo-font-family: Raleway, sans-serif;
-$font-size: 14px;
-$line-height: 1.14;
-$letter-spacing: 0.03em;*/
+%centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}*/
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot");
   src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
@@ -27,7 +44,6 @@ $letter-spacing: 0.03em;*/
 /* roboto-500 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   src: url("../fonts/roboto-v20-latin_cyrillic-500.eot");
   src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg");
@@ -36,7 +52,6 @@ $letter-spacing: 0.03em;*/
 /* roboto-700 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   src: url("../fonts/roboto-v20-latin_cyrillic-700.eot");
   src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto") format("svg");
@@ -45,16 +60,14 @@ $letter-spacing: 0.03em;*/
 /* roboto-900 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   src: url("../fonts/roboto-v20-latin_cyrillic-900.eot");
-  src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg");
+  src: local("Roboto $title-text-color"), local("Roboto-$title-text-color"), url("../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg");
 }
 
 /* raleway-regular - latin_cyrillic */
 @font-face {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 400;
   src: url("../fonts/raleway-v18-latin_cyrillic-regular.eot");
   src: local(""), url("../fonts/raleway-v18-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v18-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/raleway-v18-latin_cyrillic-regular.woff") format("woff"), url("../fonts/raleway-v18-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/raleway-v18-latin_cyrillic-regular.svg#Raleway") format("svg");
@@ -63,7 +76,6 @@ $letter-spacing: 0.03em;*/
 /* raleway-700 - latin_cyrillic */
 @font-face {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   src: url("../fonts/raleway-v18-latin_cyrillic-700.eot");
   src: local(""), url("../fonts/raleway-v18-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v18-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v18-latin_cyrillic-700.woff") format("woff"), url("../fonts/raleway-v18-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/raleway-v18-latin_cyrillic-700.svg#Raleway") format("svg");
@@ -215,7 +227,7 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   color: #212121;
   transition-duration: 250ms;
@@ -228,10 +240,9 @@ img {
 
 .contact-nav {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   color: #757575;
   display: flex;
@@ -343,7 +354,6 @@ img {
 
 .primary-button {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -393,7 +403,6 @@ img {
 }
 
 .footer .email {
-  font-style: normal;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -403,7 +412,6 @@ img {
 }
 
 .footer .phone {
-  font-style: normal;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -438,10 +446,9 @@ img {
 
 .footer-header {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
@@ -465,10 +472,10 @@ img {
 }
 
 .footer-blocks-email {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  content: "";
   align-items: center;
+  content: "";
 }
 
 .footer-field {
@@ -481,16 +488,16 @@ img {
   height: 50px;
   margin: 0;
   padding: 10px 20px;
-  font: inherit;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /*filter: drop-shadow(0px 4px 4px $box-shadow);*/
   border-radius: 4px;
 }
 
 .footer-btn-send {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-align: center;
   width: 200px;
@@ -500,36 +507,36 @@ img {
   padding: 10px 62px 10px 29px;
   outline: 0;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--top-nav-color);
+  color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-btn-send:hover,
-.footer-btn-send:focus {
-  color: var(--top-nav-color);
-  background-color: var(--accent-color);
   cursor: pointer;
 }
 
+.footer-btn-send:hover, .footer-btn-send:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
 .icon-plane-email {
+  content: "";
+  display: flex;
   width: 24px;
   height: 24px;
   margin-left: 10px;
   margin-right: 0;
-  fill: var(--top-nav-color);
+  color: #ffffff;
 }
 
 .icon-plane {
-  fill: var(--top-nav-color);
+  fill: #ffffff;
 }
 
 .footer-social-item {
@@ -543,11 +550,10 @@ img {
 }
 
 .footer-social-link {
-  text-decoration: none;
   display: inline-flex;
   justify-content: center;
-  content: "";
   align-items: center;
+  content: "";
   width: 44px;
   height: 44px;
   color: #ffffff;
@@ -555,6 +561,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
 .footer-social-link:hover, .footer-social-link:focus {
@@ -579,7 +586,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: white;
+  color: #ffffff;
   width: 145px;
   height: auto;
   margin-top: 0;
@@ -682,7 +689,6 @@ img {
 
 .title-button {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -860,12 +866,11 @@ img {
   transform: translateY(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: white;
+  color: #ffffff;
 }
 
 .footer {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -880,9 +885,8 @@ img {
 }
 
 .footer a {
-  font-style: normal;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   letter-spacing: 0.03em;
 }
 

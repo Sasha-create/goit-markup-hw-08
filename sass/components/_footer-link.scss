@@ -10,8 +10,8 @@
 .footer-blocks-email {
   display: flex;
   justify-content: center;
-  content: "";
   align-items: center;
+  content: "";
 }
 
 .footer-field {
@@ -46,7 +46,6 @@
   outline: 0;
 
   font-family: $font-family;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
