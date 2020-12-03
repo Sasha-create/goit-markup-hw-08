@@ -57,9 +57,9 @@
 .title {
   font-family: $font-family;
   font-weight: 700;
-  font-size: 14px;
+  font-size: $font-size;
   line-height: 0.87;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing;
   text-transform: uppercase;
   color: $head-text-color;
   margin-top: auto;
@@ -69,8 +69,8 @@
 .text {
   font-family: $font-family;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
   color: $title-text-color;
 }

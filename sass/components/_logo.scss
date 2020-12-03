@@ -3,7 +3,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing;
   color: $head-text-color;
 }
 
@@ -21,6 +21,6 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing;
   color: $accent-color;
 }

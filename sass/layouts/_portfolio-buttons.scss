@@ -1,11 +1,10 @@
 .title-button {
-  font-family: $font-family
-  font-style: normal;
+  font-family: $font-family;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing;
   color: $head-text-color;
   outline: 0;
   background: $hero-background-color;

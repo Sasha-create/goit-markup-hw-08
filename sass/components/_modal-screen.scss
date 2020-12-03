@@ -48,18 +48,17 @@
 .modal-title {
   display: inline-block;
   justify-content: center;
+  text-align: center;
   width: 448px;
   height: auto;
   padding: 0;
   margin-top: 0;
   margin-bottom: 30px;
   font-family: $font-family;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: $letter-spacing;
   color: $head-text-color;
 }
 
@@ -124,7 +123,7 @@
   height: 120px;
 
   font-family: inherit;
-  font-size: 14px;
+  font-size: $font-size;
   line-height: 0.87;
   letter-spacing: 0.01em;
 }
@@ -250,9 +249,9 @@
   margin-bottom: 30px;
   font-family: $font-family;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
   color: $title-text-color;
 }
 
@@ -290,7 +289,6 @@
   min-height: 50px;
 
   font-family: $font-family;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
