@@ -833,6 +833,7 @@ img {
 .footer {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -846,9 +847,15 @@ img {
 }
 
 .footer a {
+  font-style: normal;
   list-style: none;
   text-decoration: none;
   color: #ffffff;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #2196f3;
 }
 
 .footer .container {

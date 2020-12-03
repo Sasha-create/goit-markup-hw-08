@@ -1,6 +1,7 @@
 .footer {
   font-family: $font-family;
   font-weight: 400;
+  font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
@@ -14,9 +15,14 @@
   margin-right: auto;
 
   & a {
+    font-style: normal;
     list-style: none;
     text-decoration: none;
     color: $top-nav-color;
+  }
+  & a:hover,
+  & a:focus {
+    color: $accent-color;
   }
 }
 
