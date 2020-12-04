@@ -147,6 +147,10 @@ img {
   color: #2196f3;
 }
 
+.menu {
+  height: 80px;
+}
+
 .site-nav .menu-item:last-child {
   margin-right: 0;
 }
@@ -156,18 +160,11 @@ img {
 }
 
 .site-nav {
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
   width: 294px;
   height: auto;
   letter-spacing: 0.02em;
-}
-
-.site-nav .link {
-  display: block;
-  width: auto;
-  height: 80px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .menu .menu-item + .menu-item {
@@ -188,6 +185,15 @@ img {
 
 /* Site nav*/
 .site-nav .link {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 80px;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -220,11 +226,6 @@ img {
   color: #2196f3;
 }
 
-.site-nav .link.current {
-  position: relative;
-  color: #2196f3;
-}
-
 .site-nav .link.current::after {
   display: block;
   position: absolute;
@@ -233,15 +234,14 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
   bottom: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .current {
-  color: #2196f3;
 }
 
 .email {
