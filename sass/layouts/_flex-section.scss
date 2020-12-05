@@ -1,6 +1,4 @@
 .flex-photo {
-  display: flex;
-  flex-wrap: wrap;
   width: 1200px;
   height: auto;
   margin-top: auto;
@@ -12,65 +10,91 @@
   padding-top: 0;
   padding-bottom: 0;
 
-  & .content-box {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    margin-bottom: 0;
-    width: 270px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    margin: -10px;
   }
 }
 
-.content-box::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background: $hero-background-color;
-  border-radius: 4px;
-  background-size: 65px;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 25px 102px;
-  margin-top: auto;
-  margin-bottom: 30px;
+.content-box {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  margin-bottom: 0;
+  width: 270px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 5px) / 2); /*(50%)*/
+    margin: 5px;
+  }
+  @media screen and (min-width: 1140px) {
+    width: calc((100% - 6 * 10px) / 4);
+    margin: 10px;
+  }
 }
 
-.content-box:nth-child(4n) {
-  margin-right: 0px;
-}
+@media screen and (max-width: 767px) {
+  .content-box {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 
-.icon-details::before {
-  background-image: url(../images/sputnik.svg);
-}
+  .content-box::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: $hero-background-color;
+    border-radius: 4px;
+    background-size: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25px 102px;
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
 
-.icon-punctuality::before {
-  background-image: url(../images/time.svg);
-}
+  .content-box:nth-child(4n) {
+    margin-right: 0px;
+  }
 
-.icon-plan::before {
-  background-image: url(../images/notebook.svg);
-}
+  .icon-details::before {
+    background-image: url(../images/sputnik.svg);
+  }
 
-.icon-tech::before {
-  background-image: url(../images/astronaut.svg);
-}
+  .icon-punctuality::before {
+    background-image: url(../images/time.svg);
+  }
 
-.title {
-  font-family: $font-family;
-  font-weight: 700;
-  font-size: $font-size;
-  line-height: 0.87;
-  letter-spacing: $letter-spacing;
-  text-transform: uppercase;
-  color: $head-text-color;
-  margin-top: auto;
-  margin-bottom: 10px;
-}
+  .icon-plan::before {
+    background-image: url(../images/notebook.svg);
+  }
 
-.text {
-  font-family: $font-family;
-  font-weight: 400;
-  font-size: $font-size;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
-  color: $title-text-color;
+  .icon-tech::before {
+    background-image: url(../images/astronaut.svg);
+  }
+
+  .title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: $font-size;
+    line-height: 0.87;
+    letter-spacing: $letter-spacing;
+    text-transform: uppercase;
+    color: $head-text-color;
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $title-text-color;
+  }
 }

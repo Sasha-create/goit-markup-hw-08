@@ -1,16 +1,24 @@
-/* head baner*/
 .container {
-  width: 1200px;
-  height: auto;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0;
   padding-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+  }
 }
 
-.baner {
+/*.baner {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -50,3 +58,4 @@
   text-transform: uppercase;
   color: $top-nav-color;
 }
+*/
