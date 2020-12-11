@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: $font-family;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
@@ -6,6 +6,9 @@
   color: $title-text-color;
   margin: 0px;
 }
+/*body.modal-open {
+  overflow: hidden;
+}*/
 
 .link {
   @extend %link;
