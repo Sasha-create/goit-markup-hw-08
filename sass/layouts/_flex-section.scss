@@ -12,11 +12,20 @@
 }
 
 .flex-photo .content-box {
+  display: block;
+  justify-content: center;
   width: 450px;
   /*width: calc((100% - 90px) / 4);
   margin-right: 30px;*/
   margin-bottom: 0;
 
+  @media (min-width: $mobile) {
+    display: block;
+    justify-content: center;
+  }
+  @include for-size(mobile) {
+    display: block;
+  }
   @include for-size(tablet) {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
@@ -28,7 +37,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .content-box:nth-child(2n) {
     margin-right: 0px;
   }
@@ -54,9 +63,14 @@
   margin-bottom: 30px;
 }
 
-.content-box:nth-child(4n) {
-  margin-right: 0px;
+@media screen and (min-width: 1200px) {
+  .content-box:nth-child(4n) {
+    margin-right: 0px;
+  }
 }
+/*.content-box:nth-child(4n) {
+  margin-right: 0px;
+}*/
 
 .icon-details::before {
   background-image: url(../images/sputnik.svg);

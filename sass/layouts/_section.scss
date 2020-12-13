@@ -10,12 +10,17 @@
 }
 
 .section-distance {
-  width: 1200px;
-  margin: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 0;
-  padding-right: 0;
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 94px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 /*Style for portfolio.html*/
 
