@@ -240,8 +240,11 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  width: 200px;
+  height: auto;
   margin-top: 0;
   margin-bottom: 16px;
+
   padding: 0;
   font-family: $font-family;
   font-weight: 500;
@@ -273,21 +276,20 @@
 }
 
 /*.mobile-menu-item .current::after {
-  display: block;
-  justify-content: center;
-  text-align: center;
   position: absolute;
+  left: 0;
+  bottom: 0;
   content: "";
   width: 80px;
   height: 4px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+
   border-radius: 2px;
   background-color: $accent-color;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 0;
-  bottom: 0;
 
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;

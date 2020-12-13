@@ -1,12 +1,12 @@
 .header-site {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-  }
   position: relative;
   max-height: 80px;
   background-color: $top-nav-color;
   border-bottom: 1px solid $border-bottom;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

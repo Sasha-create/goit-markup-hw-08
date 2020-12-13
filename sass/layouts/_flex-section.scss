@@ -1,100 +1,99 @@
 .flex-photo {
-  width: 1200px;
-  height: auto;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 0;
-  padding-bottom: 0;
-
-  @media screen and (min-width: 768px) {
+  @include for-size(mobile) {
+    display: block;
+  }
+  @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
-    margin: -5px;
   }
-
-  @media screen and (min-width: 1140px) {
-    margin: -10px;
+  @include for-size(desktop) {
+    display: flex;
   }
 }
 
-.content-box {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+.flex-photo .content-box {
+  width: 450px;
+  /*width: calc((100% - 90px) / 4);
+  margin-right: 30px;*/
   margin-bottom: 0;
-  width: 270px;
 
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 4 * 5px) / 2); /*(50%)*/
-    margin: 5px;
-  }
-  @media screen and (min-width: 1140px) {
-    width: calc((100% - 6 * 10px) / 4);
-    margin: 10px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .content-box {
+  @include for-size(tablet) {
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 0;
   }
-
-  .content-box::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background: $hero-background-color;
-    border-radius: 4px;
-    background-size: 65px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 25px 102px;
-    margin-top: auto;
-    margin-bottom: 30px;
+  @include for-size(desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
   }
+}
 
-  .content-box:nth-child(4n) {
+@media screen and (min-width: 768px) {
+  .content-box:nth-child(2n) {
     margin-right: 0px;
   }
+}
 
-  .icon-details::before {
-    background-image: url(../images/sputnik.svg);
-  }
+/*@media screen and (min-width: 768px)
+.features .item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;*/
 
-  .icon-punctuality::before {
-    background-image: url(../images/time.svg);
-  }
+.content-box::before {
+  display: block;
+  content: "";
+  width: auto;
+  height: 120px;
+  background: $hero-background-color;
+  border-radius: 4px;
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 102px;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
 
-  .icon-plan::before {
-    background-image: url(../images/notebook.svg);
-  }
+.content-box:nth-child(4n) {
+  margin-right: 0px;
+}
 
-  .icon-tech::before {
-    background-image: url(../images/astronaut.svg);
-  }
+.icon-details::before {
+  background-image: url(../images/sputnik.svg);
+}
 
-  .title {
-    font-family: $font-family;
-    font-weight: 700;
-    font-size: $font-size;
-    line-height: 0.87;
-    letter-spacing: $letter-spacing;
-    text-transform: uppercase;
-    color: $head-text-color;
-    margin-top: auto;
-    margin-bottom: 10px;
-  }
+.icon-punctuality::before {
+  background-image: url(../images/time.svg);
+}
 
-  .text {
-    font-family: $font-family;
-    font-weight: 400;
-    font-size: $font-size;
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
-    color: $title-text-color;
-  }
+.icon-plan::before {
+  background-image: url(../images/notebook.svg);
+}
+
+.icon-tech::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.title {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: 0.87;
+  letter-spacing: $letter-spacing;
+  text-transform: uppercase;
+  text-align: center;
+  color: $head-text-color;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
