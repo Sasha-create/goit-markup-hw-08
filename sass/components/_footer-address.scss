@@ -1,11 +1,24 @@
 .bottom-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin-left: 0;
-  margin-right: 70px;
+  @include for-size(mobile) {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 70px;
+  }
 }
-
 .address {
   width: 231px;
   height: auto;
@@ -45,16 +58,39 @@
 }
 
 .contacts-footer {
-  width: auto;
-  height: auto;
+  @include for-size(mobile) {
+    text-align: center;
+  }
+  @include for-size(tablet) {
+    text-align: center;
+  }
+  @include for-size(desktop) {
+    width: auto;
+    height: auto;
+  }
 }
-
 .footer-social {
-  width: 206px;
-  height: 80px;
-  margin-left: 0;
-  margin-right: 93px;
-  padding: 0;
+  @include for-size(mobile) {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  @include for-size(tablet) {
+    display: block;
+
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  @include for-size(desktop) {
+    width: 206px;
+    height: 80px;
+    margin-left: 0;
+    margin-right: 93px;
+    padding: 0;
+  }
 }
 
 .footer-header {
@@ -72,6 +108,20 @@
 }
 
 .footer-blocks {
-  display: flex;
-  align-items: baseline;
+  @include for-size(mobile) {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }

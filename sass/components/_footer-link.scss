@@ -1,47 +1,100 @@
 /*footer email*/
 
 .footer-email {
-  width: 570px;
-  height: 86px;
-  margin: 0;
-  padding: 0;
+  @include for-size(mobile) {
+    display: block;
+    width: 100%;
+  }
+  @include for-size(tablet) {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  @include for-size(desktop) {
+    display: inline-flex;
+
+    width: 570px;
+    height: 87px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .footer-blocks-email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  content: "";
+  @include for-size(mobile) {
+    display: block;
+    width: 450px;
+  }
+  @include for-size(tablet) {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    width: 570px;
+
+    /*content: "";*/
+  }
 }
 
 .footer-field {
   position: relative;
-  display: block;
+  @include for-size(mobile) {
+    display: block;
+  }
+  @include for-size(tablet) {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
-
 .footer-input {
-  width: 358px;
-  height: 50px;
-  margin: 0;
   padding: 10px 20px;
   background-color: inherit;
   border: 1px solid $border;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px $box-shadow;
-  /*filter: drop-shadow(0px 4px 4px $box-shadow);*/
+  filter: drop-shadow(0px 4px 4px $box-shadow);
   border-radius: 4px;
+  @include for-size(mobile) {
+    display: block;
+    width: 450px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    width: 358px;
+    height: 50px;
+    margin: 0;
+  }
 }
 
 .footer-btn-send {
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
-
   width: 200px;
   height: 50px;
 
-  margin-left: 12px;
-  margin-right: 0;
   padding: 10px 62px 10px 29px;
   outline: 0;
 
@@ -64,15 +117,43 @@
     color: $top-nav-color;
     background-color: $accent-color;
   }
+  @include for-size(mobile) {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  @include for-size(tablet) {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  @include for-size(desktop) {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 0;
+  }
 }
 .icon-plane-email {
   content: "";
-  display: flex;
   width: 24px;
   height: 24px;
   margin-left: 10px;
   margin-right: 0;
   color: $top-nav-color;
+  @include for-size(mobile) {
+    display: flex;
+  }
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 
 .icon-plane {
