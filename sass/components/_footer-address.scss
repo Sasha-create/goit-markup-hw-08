@@ -14,6 +14,8 @@
   @include for-size(desktop) {
     display: flex;
     flex-direction: column;
+    width: 231px;
+    height: auto;
     padding: 0;
     margin-left: 0;
     margin-right: 70px;
@@ -58,11 +60,11 @@
 }
 
 .contacts-footer {
-  @include for-size(mobile) {
-    text-align: center;
+  @media screen and (max-width: 767px) {
+    align-items: center;
   }
-  @include for-size(tablet) {
-    text-align: center;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
   }
   @include for-size(desktop) {
     width: auto;
@@ -88,7 +90,7 @@
     width: 206px;
     height: 80px;
     margin-left: 0;
-    margin-right: 93px;
+    margin-right: 60px;
     padding: 0;
   }
 }
@@ -115,13 +117,27 @@
     margin-top: 0;
     margin-bottom: 60px;
   }
-
-  @include for-size(tablet) {
+}
+/*@include for-size(tablet) {
     display: flex;
-    flex-wrap: wrap;
   }
   @include for-size(desktop) {
     display: flex;
-    align-items: baseline;
+    margin-top: 0;
+    mmargin-left: 0;
+  }*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-blocks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-blocks {
+    display: inline-flex;
+    align-items: flex-start;
   }
 }
