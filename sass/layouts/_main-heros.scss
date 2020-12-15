@@ -1,8 +1,22 @@
 .main-heros {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin: auto;
   background: $hero-background-color;
+  @include for-size(mobile) {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  @include for-size(mobile) {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  @include for-size(mobile) {
+    width: 100%;
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin: auto;
+  }
 }
 
 .section-team {
@@ -22,6 +36,11 @@
 }
 
 .team-list {
+  @include for-size(mobile) {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -61,15 +80,13 @@
 
 .content-heros {
   text-align: center;
-  width: 100%;
-  max-width: 480px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 30px;
-  &:nth-child(4n) {
-    margin-right: 0px;
+  @include for-size(mobile) {
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
   }
+
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;

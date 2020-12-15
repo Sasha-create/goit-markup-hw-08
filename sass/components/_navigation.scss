@@ -3,17 +3,20 @@
 
   height: 80px;
   @media screen and (max-width: 479px) {
+    width: 100%;
     display: flex;
-    justify-content: flex-start; /* space-between ;*/
+    justify-content: left; /* space-between ;*/
     align-items: center;
   }
 
   @media screen and (max-width: 767px) {
+    width: 100%;
     display: flex;
     justify-content: center; /*flex-start ;*/
     align-items: center;
   }
-  @media screen and (max-width: 1299px) {
+  @media screen and (max-width: 1199px) {
+    width: 100%;
     display: flex;
     justify-content: flex-end; /*flex-start ;*/
     align-items: center;
@@ -46,7 +49,7 @@
 }
 
 .contact-nav .link {
-  display: flex;
+  /*display: flex;*/
   padding-top: 32px;
   padding-bottom: 32px;
   padding: auto;
@@ -57,7 +60,8 @@
     display: none;
   }
   @media screen and (min-width: 768px) {
-    justify-content: left;
+    display: flex;
+    justify-content: center;
   }
   &:hover,
   &:focus {
