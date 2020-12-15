@@ -33,18 +33,45 @@
 /*Style for portfolio.html*/
 
 .portfolio-page {
-  width: 1200px;
-  height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
+  @include for-size(mobile) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  @include for-size(tablet) {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @include for-size(desktop) {
+    width: calc((100% - 90px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    /*height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;*/
+  }
 }
 .title-potfolio {
+  @include for-size(mobile) {
+    width: 100%;
+  }
+  @include for-size(tablet) {
+    width: calc((100% - 60px) / 2);
+  }
+  @include for-size(desktop) {
+    width: calc((100% - 90px) / 3);
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   background: $top-nav-color;
   text-decoration: $head-text-color;
-  margin-left: auto;
-  margin-right: auto;
 }

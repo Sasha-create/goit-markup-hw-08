@@ -2,10 +2,15 @@
   @extend %centered-flex;
 
   height: 80px;
+  @media screen and (max-width: 479px) {
+    display: flex;
+    justify-content: flex-start; /* space-between;*/
+    align-items: center;
+  }
 
   @media screen and (max-width: 767px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* space-between;*/
     align-items: center;
   }
 }
@@ -110,6 +115,7 @@
 .contact-nav {
   @extend %list;
   @media screen and (min-width: 768px) {
+    width: 100%;
     margin-top: 0;
     margin-left: 84px;
 
@@ -124,6 +130,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 100%;
     display: flex;
     padding: 0;
     margin-left: auto;
