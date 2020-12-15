@@ -76,10 +76,10 @@
   transition-timing-function: $transition-timing-function;
   @include for-size(mobile) {
     display: block;
-    width: auto;
+    width: 100%;
   }
   /*@include for-size(tablet) {
-    display: block;
+    display: flex;
     flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
@@ -87,7 +87,7 @@
       margin-right: 0px;
     }
   }
-   @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200) {
     display: flex;
     flex-basis: calc((100% - 90px) / 3);
     height: auto;
@@ -115,8 +115,19 @@
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  width: 322px;
-  height: auto;
+  @include for-size(mobile) {
+    display: block;
+    width: 100%;
+  }
+  /* @include for-size(tablet) {
+    display: block;
+    width: 100%;
+  }
+  @include for-size(desktop) {
+    display: block;
+    width: 322px;
+    height: auto;
+  }*/
 }
 
 .type-work {
@@ -129,8 +140,19 @@
   text-decoration-line: none;
   margin: 0;
   padding: 0;
-  width: 322px;
-  height: auto;
+  @include for-size(mobile) {
+    display: block;
+    width: 100%;
+  }
+  @include for-size(tablet) {
+    display: block;
+    width: 100%;
+  }
+  @include for-size(desktop) {
+    display: block;
+    width: 322px;
+    height: auto;
+  }
 }
 /*overlay*/
 

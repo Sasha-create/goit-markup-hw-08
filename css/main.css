@@ -2400,6 +2400,7 @@ padding-left: 15px;
 
 @media screen and (max-width: 767px) {
   .menu-button {
+    display: flex;
     padding-bottom: 30px;
   }
   .menu-button .btn {
@@ -2425,6 +2426,7 @@ padding-left: 15px;
 @media screen and (min-width: 768px) {
   .menu-button {
     width: 100%;
+    display: flex;
   }
   .menu-button .btn {
     margin-bottom: 0;
@@ -2531,7 +2533,7 @@ padding-left: 15px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /*@include for-size(tablet) {
-    display: block;
+    display: flex;
     flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
@@ -2539,7 +2541,7 @@ padding-left: 15px;
       margin-right: 0px;
     }
   }
-   @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200) {
     display: flex;
     flex-basis: calc((100% - 90px) / 3);
     height: auto;
@@ -2557,7 +2559,7 @@ padding-left: 15px;
 @media (min-width: 480px) {
   .img-item {
     display: block;
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -2574,8 +2576,22 @@ padding-left: 15px;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  width: 322px;
-  height: auto;
+  /* @include for-size(tablet) {
+    display: block;
+    width: 100%;
+  }
+  @include for-size(desktop) {
+    display: block;
+    width: 322px;
+    height: auto;
+  }*/
+}
+
+@media (min-width: 480px) {
+  .title-work {
+    display: block;
+    width: 100%;
+  }
 }
 
 .type-work {
@@ -2588,8 +2604,28 @@ padding-left: 15px;
   text-decoration-line: none;
   margin: 0;
   padding: 0;
-  width: 322px;
-  height: auto;
+}
+
+@media (min-width: 480px) {
+  .type-work {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .type-work {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .type-work {
+    display: block;
+    width: 322px;
+    height: auto;
+  }
 }
 
 /*overlay*/

@@ -69,6 +69,8 @@
     }
   }
   @media screen and (max-width: 767px) {
+    display: flex;
+
     padding-bottom: 30px;
     & .btn {
       margin-bottom: 15px;
@@ -88,6 +90,8 @@
   }
   @media screen and (min-width: 768px) {
     width: 100%;
+    display: flex;
+
     & .btn {
       margin-bottom: 0;
     }
