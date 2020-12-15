@@ -1,19 +1,17 @@
 .img-work {
   @include for-size(mobile) {
+    display: block;
     width: 100%;
-    margin-bottom: 30px;
   }
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - 60px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
+
+    flex-basis: calc((100% - 60px) / 2);
   }
-  @include for-size(desktop) {
+  /*@include for-size(desktop) {
     display: flex;
-    flex-wrap: wrap;
-    width: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -43,7 +41,7 @@
   }
   @media screen and (min-width: 768) {
     display: flex;
-    width: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -54,7 +52,9 @@
   }
   @media screen and (min-width: 1200) {
     display: flex;
-    width: calc((100% - 90px) / 3);
+    /*justify-content: space-between;
+    align-items: center;*/
+    flex-basis: calc((100% - 90px) / 3);
     height: auto;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -100,8 +100,17 @@
   }*/
 }
 
-/*.img-item {
-  display: block;
+.img-item {
+  @include for-size(mobile) {
+    display: block;
+  }
+  @include for-size(tablet) {
+    display: block;
+
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+/*display: block;
   width: 100%;
   height: auto;
   margin-top: 0;

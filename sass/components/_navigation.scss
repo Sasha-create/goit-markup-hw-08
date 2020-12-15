@@ -4,13 +4,18 @@
   height: 80px;
   @media screen and (max-width: 479px) {
     display: flex;
-    justify-content: flex-start; /* space-between;*/
+    justify-content: flex-start; /* space-between ;*/
     align-items: center;
   }
 
   @media screen and (max-width: 767px) {
     display: flex;
-    justify-content: flex-start; /* space-between;*/
+    justify-content: space-between; /*flex-start ;*/
+    align-items: center;
+  }
+  @media screen and (max-width: 1299px) {
+    display: flex;
+    justify-content: flex-end; /*flex-start ;*/
     align-items: center;
   }
 }

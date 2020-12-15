@@ -34,16 +34,19 @@
 
 .portfolio-page {
   @include for-size(mobile) {
+    display: block;
     width: 100%;
     margin-bottom: 30px;
   }
-  @include for-size(tablet) {
-    width: calc((100% - 60px) / 2);
+  /* @include for-size(tablet) {
+    display: flex;
+    flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
   @include for-size(desktop) {
-    width: calc((100% - 90px) / 3);
+    display: flex;
+    flex-basis: calc((100% - 90px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
     /*height: auto;
@@ -53,17 +56,20 @@
     padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;*/
-  }
 }
+
 .title-potfolio {
   @include for-size(mobile) {
+    display: block;
     width: 100%;
   }
-  @include for-size(tablet) {
-    width: calc((100% - 60px) / 2);
+  /*@include for-size(tablet) {
+    display: flex;
+    width: 100%;
   }
   @include for-size(desktop) {
-    width: calc((100% - 90px) / 3);
+    display: flex;
+    width: 100%;
     height: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -71,7 +77,7 @@
     padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
-  }
+  }*/
   background: $top-nav-color;
   text-decoration: $head-text-color;
 }
