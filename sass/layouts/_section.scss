@@ -33,11 +33,20 @@
 /*Style for portfolio.html*/
 
 .portfolio-page {
+  /*width: 100%;
+  height: auto;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
   @include for-size(mobile) {
     display: block;
     width: 100%;
     margin-bottom: 30px;
   }
+
   /* @include for-size(tablet) {
     display: flex;
     flex-basis: calc((100% - 60px) / 2);
@@ -47,15 +56,13 @@
   @include for-size(desktop) {
     display: flex;
     flex-basis: calc((100% - 90px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    /*height: auto;
-    padding-left: 15px;
+padding-left: 15px;
     padding-right: 15px;
     padding-top: 94px;
     padding-bottom: 94px;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
+  }*/
 }
 
 .title-potfolio {

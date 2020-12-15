@@ -167,7 +167,7 @@ img {
 @media screen and (max-width: 767px) {
   .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     /*flex-start ;*/
     align-items: center;
   }
@@ -1701,6 +1701,14 @@ img {
 
 /*Style for portfolio.html*/
 .portfolio-page {
+  /*width: 100%;
+  height: auto;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
   /* @include for-size(tablet) {
     display: flex;
     flex-basis: calc((100% - 60px) / 2);
@@ -1710,15 +1718,13 @@ img {
   @include for-size(desktop) {
     display: flex;
     flex-basis: calc((100% - 90px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    /*height: auto;
-    padding-left: 15px;
+padding-left: 15px;
     padding-right: 15px;
     padding-top: 94px;
     padding-bottom: 94px;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
+  }*/
 }
 
 @media (min-width: 480px) {
@@ -2387,18 +2393,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 94px;
+    padding: 0;
     margin-bottom: 50px;
   }
 }
 
 .img-work {
-  /*@include for-size(desktop) {
-    display: flex;
-    flex-basis: calc((100% - 90px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
   /*display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -2408,7 +2408,6 @@ img {
 @media (min-width: 480px) {
   .img-work {
     display: block;
-    width: 100%;
   }
 }
 
@@ -2417,6 +2416,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-work {
+    display: flex;
+    flex-basis: calc((100% - 90px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 

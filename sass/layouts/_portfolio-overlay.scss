@@ -1,15 +1,13 @@
 .img-work {
   @include for-size(mobile) {
     display: block;
-    width: 100%;
   }
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
-
     flex-basis: calc((100% - 60px) / 2);
   }
-  /*@include for-size(desktop) {
+  @include for-size(desktop) {
     display: flex;
     flex-basis: calc((100% - 90px) / 3);
     margin-right: 30px;
