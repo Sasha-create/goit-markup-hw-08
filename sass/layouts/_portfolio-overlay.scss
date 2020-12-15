@@ -13,15 +13,6 @@
     margin-right: 30px;
     margin-bottom: 30px;
   }
-  /*display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;*/
-
-  & a {
-    text-decoration-line: none;
-    background-color: transparent;
-  }
 }
 
 .img-link {
@@ -50,19 +41,10 @@
   }
   @media screen and (min-width: 1200) {
     display: flex;
-    /*justify-content: space-between;
-    align-items: center;*/
     flex-basis: calc((100% - 90px) / 3);
     height: auto;
     margin-right: 30px;
     margin-bottom: 30px;
-    /*display: flex;
-    flex-wrap: wrap;
-
-    width: calc((100% - 60px) / 3);
-    &:nth-child(2n) {
-      margin-right: 30px;
-    }*/
     &:nth-child(3n) {
       margin-right: 0px;
     }
@@ -72,11 +54,6 @@
   }
 }
 .img-link {
-  /*display: block;
-  width: 370px;
-  height: auto;
-  margin-right: 30px;
-  margin-bottom: 30px;*/
   background: $top-nav-color;
   border: 1px solid $border-portfolio-card;
   box-sizing: border-box;
@@ -88,42 +65,42 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
-
-  /*&:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }*/
 }
 
 .img-item {
-  @include for-size(mobile) {
-    display: block;
-  }
-  @include for-size(tablet) {
-    display: block;
-
-    flex-basis: calc((100% - 60px) / 2);
-  }
-}
-/*display: block;
-  width: 100%;
-  height: auto;
+  text-decoration-line: none;
+  background-color: transparent;
   margin-top: 0;
   margin-bottom: 0;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
-
-  & img {
+  @include for-size(mobile) {
     display: block;
-    width: 370px;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    width: auto;
   }
-}*/
+  @include for-size(tablet) {
+    display: block;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+  @media screen and (min-width: 1200) {
+    display: flex;
+    flex-basis: calc((100% - 90px) / 3);
+    height: auto;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+  }
+}
 
 .title-work {
   font-family: $font-family;

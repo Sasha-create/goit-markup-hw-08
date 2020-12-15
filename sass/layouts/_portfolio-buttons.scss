@@ -61,15 +61,14 @@
     justify-content: flex-start; /* space-between;*/
     align-items: center;
     width: auto;
+    margin-top: 0;
     margin-bottom: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
     & .btn:not(:nth-last-child(-2n + 3)) {
       margin-right: 8px;
     }
   }
   @media screen and (max-width: 767px) {
-    padding-top: 30px;
     padding-bottom: 30px;
     & .btn {
       margin-bottom: 15px;
@@ -80,8 +79,7 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
     margin-bottom: 30px;
     justify-content: center;
   }
