@@ -1,6 +1,6 @@
 /*footer email*/
 
-.footer-email {
+/*.footer-email {
   @include for-size(mobile) {
     display: block;
     width: 450px;
@@ -36,7 +36,7 @@
     height: auto;
     margin-bottom: 10px;
 
-    /*content: "";*/
+    
   }
 }
 
@@ -150,9 +150,9 @@
   }
   @include for-size(desktop) {
     display: flex;
-  }*/
-}
+  }
+}*/
 
-.icon-plane {
+/*.icon-plane {
   fill: $top-nav-color;
-}
+}*/

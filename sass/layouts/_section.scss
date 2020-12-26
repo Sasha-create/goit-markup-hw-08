@@ -1,6 +1,6 @@
 /* section*/
 
-.section {
+/*.section {
   margin: auto;
   padding-top: 94px;
   padding-bottom: 0;
@@ -32,9 +32,8 @@
 }
 /*Style for portfolio.html*/
 
-.portfolio-page {
-  /*width: 100%;
-  height: auto;*/
+/*.portfolio-page {
+ 
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 94px;
@@ -47,22 +46,7 @@
     margin-bottom: 30px;
   }
 
-  /* @include for-size(tablet) {
-    display: flex;
-    flex-basis: calc((100% - 60px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  @include for-size(desktop) {
-    display: flex;
-    flex-basis: calc((100% - 90px) / 3);
-padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
-  }*/
+  
 }
 
 .title-potfolio {
@@ -70,21 +54,7 @@ padding-left: 15px;
     display: block;
     width: 100%;
   }
-  /*@include for-size(tablet) {
-    display: flex;
-    width: 100%;
-  }
-  @include for-size(desktop) {
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
-  }*/
+  
   background: $top-nav-color;
   text-decoration: $head-text-color;
-}
+}*/

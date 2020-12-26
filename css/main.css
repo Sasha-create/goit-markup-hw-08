@@ -1120,26 +1120,20 @@ img {
   color: #2196f3;
 }
 
-@media (min-width: 480px) {
-  .bottom-footer {
+/*.bottom-footer {
+  @include for-size(mobile) {
     display: block;
     justify-content: center;
     text-align: center;
     margin-top: 0;
     margin-bottom: 60px;
   }
-}
-
-@media (min-width: 768px) {
-  .bottom-footer {
+  @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
   }
-}
-
-@media (min-width: 1200px) {
-  .bottom-footer {
+  @include for-size(desktop) {
     display: flex;
     flex-direction: column;
     width: 231px;
@@ -1149,7 +1143,6 @@ img {
     margin-right: 70px;
   }
 }
-
 .address {
   width: 231px;
   height: auto;
@@ -1160,20 +1153,20 @@ img {
 }
 
 .footer .email {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer .phone {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1188,46 +1181,34 @@ img {
   margin-bottom: 9px;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts-footer {
+.contacts-footer {
+  @media screen and (max-width: 767px) {
     align-items: center;
   }
-}
-
-@media screen and (max-width: 1199px) {
-  .contacts-footer {
+  @media screen and (max-width: 1199px) {
     align-items: center;
   }
-}
-
-@media (min-width: 1200px) {
-  .contacts-footer {
+  @include for-size(desktop) {
     width: auto;
     height: auto;
   }
 }
-
-@media (min-width: 480px) {
-  .footer-social {
+.footer-social {
+  @include for-size(mobile) {
     display: block;
     justify-content: center;
     text-align: center;
     margin-top: 0;
     margin-bottom: 60px;
   }
-}
-
-@media (min-width: 768px) {
-  .footer-social {
+  @include for-size(tablet) {
     display: block;
+
     width: 50%;
     margin-top: 0;
     margin-bottom: 60px;
   }
-}
-
-@media (min-width: 1200px) {
-  .footer-social {
+  @include for-size(desktop) {
     width: 206px;
     height: 80px;
     margin-left: 0;
@@ -1237,21 +1218,21 @@ img {
 }
 
 .footer-header {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
   text-transform: uppercase;
   text-align: left;
-  color: #ffffff;
+  color: $top-nav-color;
   margin-top: 0;
   margin-bottom: 20px;
   padding: 0;
 }
 
-@media (min-width: 480px) {
-  .footer-blocks {
+.footer-blocks {
+  @include for-size(mobile) {
     display: block;
     justify-content: center;
     text-align: center;
@@ -1259,7 +1240,6 @@ img {
     margin-bottom: 60px;
   }
 }
-
 /*@include for-size(tablet) {
     display: flex;
   }
@@ -1268,7 +1248,7 @@ img {
     margin-top: 0;
     mmargin-left: 0;
   }*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+/*@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-blocks {
     display: flex;
     align-items: flex-start;
@@ -1276,78 +1256,59 @@ img {
     flex-wrap: wrap;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .footer-blocks {
     display: inline-flex;
     align-items: flex-start;
   }
-}
-
+}*/
 /*footer email*/
-@media (min-width: 480px) {
-  .footer-email {
+/*.footer-email {
+  @include for-size(mobile) {
     display: block;
     width: 450px;
   }
-}
-
-@media (min-width: 768px) {
-  .footer-email {
+  @include for-size(tablet) {
     display: block;
     justify-content: center;
     align-items: center;
     width: 450px;
   }
-}
-
-@media (min-width: 1200px) {
-  .footer-email {
+  @include for-size(desktop) {
     display: block;
   }
 }
 
-@media (min-width: 480px) {
-  .footer-blocks-email {
+.footer-blocks-email {
+  @include for-size(mobile) {
     display: block;
     width: 100%;
   }
-}
-
-@media (min-width: 768px) {
-  .footer-blocks-email {
+  @include for-size(tablet) {
     display: block;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: auto;
   }
-}
-
-@media (min-width: 1200px) {
-  .footer-blocks-email {
+  @include for-size(desktop) {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-    /*content: "";*/
+
+    
   }
 }
 
 .footer-field {
   position: relative;
-}
-
-@media (min-width: 480px) {
-  .footer-field {
+  @include for-size(mobile) {
     display: block;
   }
-}
-
-@media (min-width: 768px) {
-  .footer-field {
+  @include for-size(tablet) {
     display: block;
     justify-content: center;
     align-items: center;
@@ -1358,45 +1319,32 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-@media (min-width: 1200px) {
-  .footer-field {
+  @include for-size(desktop) {
     display: flex;
   }
 }
-
 .footer-input {
   padding: 10px 20px;
   background-color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid $border;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 4px 4px $box-shadow;
+  filter: drop-shadow(0px 4px 4px $box-shadow);
   border-radius: 4px;
-}
-
-@media (min-width: 480px) {
-  .footer-input {
+  @include for-size(mobile) {
     display: block;
     width: 100%;
     margin-top: 0;
     margin-bottom: 20px;
   }
-}
-
-@media (min-width: 768px) {
-  .footer-input {
+  @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 0;
     margin-bottom: 20px;
   }
-}
-
-@media (min-width: 1200px) {
-  .footer-input {
+  @include for-size(desktop) {
     display: flex;
     width: 100%;
     height: 50px;
@@ -1407,49 +1355,41 @@ img {
 .footer-btn-send {
   width: 200px;
   height: 50px;
+
   padding: 10px 62px 10px 29px;
   outline: 0;
-  font-family: "Roboto", sans-serif;
+
+  font-family: $font-family;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $top-nav-color;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px $box-shadow;
   border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
   cursor: pointer;
-}
-
-.footer-btn-send:hover, .footer-btn-send:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
-@media screen and (max-width: 479px) {
-  .footer-btn-send {
+  &:hover,
+  &:focus {
+    color: $top-nav-color;
+    background-color: $accent-color;
+  }
+  @media screen and (max-width: 479px) {
     display: flex;
   }
-}
-
-@media (min-width: 480px) {
-  .footer-btn-send {
+  @include for-size(mobile) {
     display: flex;
     align-items: center;
     text-align: center;
   }
-}
-
-@media (min-width: 768px) {
-  .footer-btn-send {
+  @include for-size(tablet) {
     display: flex;
   }
-}
-
-@media (min-width: 1200px) {
-  .footer-btn-send {
+  @include for-size(desktop) {
     display: inline-flex;
     align-items: center;
     text-align: center;
@@ -1457,14 +1397,13 @@ img {
     margin-right: 0;
   }
 }
-
 .icon-plane-email {
   content: "";
   width: 24px;
   height: 24px;
   margin-left: 10px;
   margin-right: 0;
-  color: #ffffff;
+  color: $top-nav-color;
   /*@include for-size(mobile) {
     display: block;
   }
@@ -1474,13 +1413,11 @@ img {
   }
   @include for-size(desktop) {
     display: flex;
-  }*/
-}
-
-.icon-plane {
-  fill: #ffffff;
-}
-
+  }
+}*/
+/*.icon-plane {
+  fill: $top-nav-color;
+}*/
 .footer-social-item {
   display: flex;
   justify-content: center;
@@ -2576,15 +2513,6 @@ padding-left: 15px;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  /* @include for-size(tablet) {
-    display: block;
-    width: 100%;
-  }
-  @include for-size(desktop) {
-    display: block;
-    width: 322px;
-    height: auto;
-  }*/
 }
 
 @media (min-width: 480px) {
