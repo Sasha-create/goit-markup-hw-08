@@ -1,4 +1,4 @@
-.title-button {
+/*.title-button {
   font-family: $font-family;
   font-weight: 500;
   font-size: 16px;
@@ -29,36 +29,13 @@
   }
 }
 
-/*.btn {
-  margin-right: 8px;
-  display: inline-block;
-  outline: 0;
 
-  &:last-child {
-    margin-right: 0;
-  }
-}*/
-/*@media screen and (max-width: 1199px) {
-  .menu-button {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .menu-button {
-    display: flex;
-    justify-content: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
-}*/
 .menu-button {
   text-align: center;
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* space-between;*/
+    justify-content: flex-start; 
     align-items: center;
     width: auto;
     margin-top: 0;
@@ -104,4 +81,4 @@
     padding: 0;
     margin-bottom: 50px;
   }
-}
+}*/

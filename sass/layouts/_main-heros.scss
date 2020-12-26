@@ -1,4 +1,4 @@
-.main-heros {
+/*.main-heros {
   background: $hero-background-color;
   @include for-size(mobile) {
     width: 100%;
@@ -59,24 +59,7 @@
   }
 }
 
-/*@media (min-width: $mobile) {
-    display: block;
-    justify-content: center;
-  }
-  @include for-size(mobile) {
-    display: block;
-  }
-  @include for-size(tablet) {
-    width: calc((100% - 30px) / 2);
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
-  @include for-size(desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-  }*/
+
 
 .content-heros {
   text-align: center;
@@ -151,4 +134,4 @@
   margin-bottom: 16px;
   padding-top: 0;
   padding-bottom: 0;
-}
+}*/

@@ -5,14 +5,14 @@ body {
   background: $primary-text-color;
   color: $title-text-color;
   margin: 0px;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
-/*body.modal-open {
-  overflow: hidden;
-}*/
 
-.link {
+/*.link {
   @extend %link;
-}
+}*/
 
 .list {
   @extend %list;
@@ -28,7 +28,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  /*outline: 2px solid red;*/
+  outline: 2px solid red;
 }
 
 h1,
@@ -47,6 +47,13 @@ img {
   height: auto;
 }
 
-.hidden-header {
-  @extend %hidden-header;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

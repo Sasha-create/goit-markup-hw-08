@@ -1,4 +1,15 @@
 .logo {
+  @extend %logoweb;
+
+  @media screen and (min-width: $mobile) {
+    @include font(700, 24px, 1.16, 0.03em);
+  }
+  @media screen and (min-width: $desktop) {
+    @include font(700, 26px, 1.19, 0.03em);
+  }
+}
+
+/*.logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -11,7 +22,7 @@
   line-height: 1.19;
   letter-spacing: $letter-spacing;
   color: $head-text-color;
-}
+}*/
 
 .logo-web {
   font-family: $logo-font-family;
