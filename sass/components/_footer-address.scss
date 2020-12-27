@@ -1,143 +1,64 @@
-/*.bottom-footer {
-  @include for-size(mobile) {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 60px;
+.address {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    padding-top: 0px;
   }
-  @include for-size(tablet) {
-    display: flex;
-    flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+    padding: 0;
+  }
+  @media screen and (min-width: $desktop) {
     width: 50%;
   }
-  @include for-size(desktop) {
+  &-map {
     display: flex;
     flex-direction: column;
-    width: 231px;
-    height: auto;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 70px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+  }
+  & .logo {
+    color: $primary-text-color;
   }
 }
-.address {
-  width: 231px;
-  height: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+.address-list {
+  @extend %list;
 }
-
-.footer .email {
-  font-family: $font-family;
-  font-weight: 400;
-  font-size: $font-size;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer .phone {
-  font-family: $font-family;
-  font-weight: 400;
-  font-size: $font-size;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.address-link {
-  margin-top: 0;
-  margin-bottom: 9px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.contacts-footer .location:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.contacts-footer {
+.address-map .item {
   @media screen and (max-width: 767px) {
-    align-items: center;
+    margin-bottom: 8px;
   }
-  @media screen and (max-width: 1199px) {
-    align-items: center;
+  &:last-child {
+    margin-bottom: 0;
   }
-  @include for-size(desktop) {
-    width: auto;
-    height: auto;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
-.footer-social {
-  @include for-size(mobile) {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 60px;
+
+.address-map .link {
+  color: $title-text-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
-  @include for-size(tablet) {
-    display: block;
+}
+.address-contact {
+  @media screen and (max-width: 767px) {
+    padding-top: 0px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
 
     width: 50%;
-    margin-top: 0;
-    margin-bottom: 60px;
-  }
-  @include for-size(desktop) {
-    width: 206px;
-    height: 80px;
-    margin-left: 0;
-    margin-right: 60px;
     padding: 0;
   }
 }
-
-.footer-header {
-  font-family: $font-family;
-  font-weight: 700;
-  font-size: $font-size;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
-  text-transform: uppercase;
-  text-align: left;
-  color: $top-nav-color;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding: 0;
-}
-
-.footer-blocks {
-  @include for-size(mobile) {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 60px;
-  }
-}
-/*@include for-size(tablet) {
-    display: flex;
-  }
-  @include for-size(desktop) {
-    display: flex;
-    margin-top: 0;
-    mmargin-left: 0;
-  }*/
-
-/*@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-blocks {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-blocks {
-    display: inline-flex;
-    align-items: flex-start;
-  }
-}*/
