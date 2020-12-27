@@ -1,84 +1,145 @@
-/*.title-button {
-  font-family: $font-family;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: $letter-spacing;
-  color: $head-text-color;
-  outline: 0;
-  background: $hero-background-color;
-  border-radius: 4px;
-  padding: 6px 22px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-
-  &:hover,
-  &:focus {
-    color: $top-nav-color;
-    background: $accent-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+.title-portfolio {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-
-  &:active {
-    color: $top-nav-color;
-    background: $accent-color;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
-
-
 .menu-button {
-  text-align: center;
+  @extend %list;
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; 
-    align-items: center;
-    width: auto;
-    margin-top: 0;
     margin-bottom: 40px;
-
-    & .btn:not(:nth-last-child(-2n + 3)) {
+    & .item:not(:nth-last-child(-2n + 3)) {
       margin-right: 8px;
     }
   }
   @media screen and (max-width: 767px) {
-    display: flex;
-
-    padding-bottom: 30px;
-    & .btn {
+    & .item {
       margin-bottom: 15px;
     }
-    & .btn:nth-last-child(-n + 2) {
+    & .item:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
-
     margin-bottom: 30px;
     justify-content: center;
   }
-  & .btn:not(:last-child) {
+  & .item:not(:last-child) {
     margin-right: 8px;
   }
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    display: flex;
-
-    & .btn {
+  @media screen and (min-width: $tablet) {
+    & .item {
       margin-bottom: 0;
     }
   }
-  @media screen and (min-width: 1200px) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
-}*/
+}
+.title-button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 250ms $transition-timing-function,
+    background 250ms $transition-timing-function,
+    box-shadow 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $top-nav-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+.img-work {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  & img {
+    @extend %image;
+  }
+  & .portfolio-meta {
+    padding: 20px 24px;
+    background: $top-nav-color;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    box-sizing: border-box;
+  }
+  & .title-work {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $head-text-color;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+  }
+  & .type-work {
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $title-text-color;
+  }
+}
+.img-work .item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  &:last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 60px) / 3);
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+  }
+}
+.img-work .link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  color: $primary-text-color;
+  transition: box-shadow 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
