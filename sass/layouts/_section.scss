@@ -18,6 +18,7 @@
     margin-bottom: 50px;
     @include font(700, 36px, 1.16, 0.03em);
     text-align: center;
+    color: $head-text-color;
   }
   &-content {
     position: absolute;
@@ -93,6 +94,7 @@
     margin-bottom: 10px;
     @include font($fw: 700, $lh: 1.14);
     text-transform: uppercase;
+    color: $head-text-color;
     @media screen and (max-width: 767px) {
       text-align: center;
     }
