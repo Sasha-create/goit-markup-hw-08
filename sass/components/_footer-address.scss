@@ -41,9 +41,15 @@
   &:last-child {
     margin-bottom: 0;
   }
+  color: $primary-text-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.address-map .link {
+.address-list .item .link {
   color: $title-text-color;
   text-decoration: none;
   &:hover,
@@ -54,11 +60,15 @@
 .address-contact {
   @media screen and (max-width: 767px) {
     padding-top: 0px;
+    width: 100%;
   }
   @media screen and (min-width: $tablet) {
     display: flex;
-
-    width: 50%;
+    width: 100%;
+    margin-bottom: 60px;
     padding: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 50%;
   }
 }
