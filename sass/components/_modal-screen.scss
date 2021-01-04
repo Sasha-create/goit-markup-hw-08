@@ -43,6 +43,16 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
+  @media screen and (min-width: $desktop) {
+    top: 221px;
+    min-width: 528px;
+    min-height: 581px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 208px;
+    width: 100%;
+  }
 }
 
 .modal-title {
@@ -233,15 +243,17 @@
 
 .label-checkbox {
   @extend %centered-flex;
-
   margin-top: 0;
   margin-bottom: 30px;
-  font-family: $font-family;
-  font-weight: 400;
-  font-size: $font-size;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
-  color: $title-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .icon-checkbox {
@@ -262,6 +274,11 @@
     border-radius: 2px;
     background-image: url("../images/checkbox.svg");
     background-repeat: no-repeat;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 16px;
+    min-height: 15px;
+    width: 100%;
   }
 }
 

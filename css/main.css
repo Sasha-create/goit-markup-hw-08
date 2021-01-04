@@ -676,6 +676,21 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 221px;
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    top: 208px;
+    width: 100%;
+  }
+}
+
 .modal-title {
   display: inline-block;
   justify-content: center;
@@ -846,12 +861,20 @@ img {
 .label-checkbox {
   margin-top: 0;
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .label-checkbox {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .label-checkbox {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .icon-checkbox {
@@ -872,6 +895,14 @@ img {
   border-radius: 2px;
   background-image: url("../images/checkbox.svg");
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-checkbox {
+    max-width: 16px;
+    min-height: 15px;
+    width: 100%;
+  }
 }
 
 .modal-btn-send {
@@ -1677,7 +1708,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .title-portfolio {
-    padding-top: 94px;
+    padding-top: 80px;
     padding-bottom: 94px;
   }
 }
@@ -1687,6 +1718,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: 60px;
   }
   .menu-button .item:not(:nth-last-child(-2n + 3)) {
     margin-right: 8px;
@@ -1706,6 +1738,7 @@ img {
   .menu-button {
     display: flex;
     margin-bottom: 30px;
+    margin-top: 60px;
     justify-content: center;
   }
 }
@@ -1723,6 +1756,7 @@ img {
 @media screen and (min-width: 1200px) {
   .menu-button {
     margin-bottom: 50px;
+    margin-top: 94px;
   }
 }
 
