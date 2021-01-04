@@ -661,10 +661,15 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  width: 528px;
-  height: auto;
+  transform: translateX(-50%);
+  /*position: absolute;
+  top: 50%;
+  left: 50%;*/
+  max-width: 450px;
+  width: 93%;
+  min-height: 609px;
   background: #ffffff;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
@@ -692,11 +697,9 @@ img {
 }
 
 .modal-title {
-  display: inline-block;
+  display: block;
   justify-content: center;
   text-align: center;
-  width: 448px;
-  height: auto;
   padding: 0;
   margin-top: 0;
   margin-bottom: 30px;
@@ -739,14 +742,15 @@ img {
 .form {
   display: flex;
   flex-direction: column;
-  width: 448px;
-  height: auto;
+  /*width: 448px;
+  height: auto;*/
 }
 
 .form-field {
   position: relative;
   display: block;
-  width: 448px;
+  width: 100%;
+  /* 448px*/
   height: auto;
   margin-bottom: 28px;
 }
@@ -758,7 +762,8 @@ img {
 .form-field > .comments {
   position: relative;
   display: block;
-  width: 448px;
+  /*width: 448px;*/
+  width: 100%;
   height: 120px;
   font-family: inherit;
   font-size: 14px;
@@ -783,7 +788,8 @@ img {
 }
 
 .form-input {
-  width: 448px;
+  width: 100%;
+  /*448px*/
   height: auto;
   margin-top: 0;
   padding: 10px 20px;
