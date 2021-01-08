@@ -672,7 +672,7 @@ img {
   min-height: 609px;
   background: #ffffff;
   padding: 40px;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -15%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1018,6 +1018,10 @@ img {
 
 .address-list .item .link:hover, .address-list .item .link:focus {
   color: #2196f3;
+}
+
+.address-contact {
+  align-items: baseline;
 }
 
 @media screen and (max-width: 767px) {

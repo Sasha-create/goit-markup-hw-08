@@ -39,7 +39,7 @@
   background: $top-nav-color;
   padding: 40px;
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -15%) scale(1);
   transition: transform $transition-duration $transition-timing-function;
 
   &:hover,
