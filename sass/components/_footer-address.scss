@@ -50,7 +50,7 @@
 }
 
 .address-list .item .link {
-  color: $title-text-color;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   &:hover,
   &:focus {
@@ -71,5 +71,6 @@
   }
   @media screen and (min-width: $desktop) {
     width: 50%;
+    margin: 0;
   }
 }
