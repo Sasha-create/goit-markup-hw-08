@@ -81,9 +81,9 @@
   display: flex;
   flex-wrap: wrap;
   // justify-content: center;
-  & img {
+  /*& img {
     @extend %image;
-  }
+  }*/
   & .portfolio-meta {
     padding: 20px 24px;
     background: $top-nav-color;
@@ -154,10 +154,5 @@
   &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
-  }
-}
-.portfolio-meta {
-  @media screen and (max-width: 767px) {
-    width: 370px;
   }
 }

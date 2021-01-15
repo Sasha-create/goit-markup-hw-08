@@ -1,15 +1,8 @@
 .product-thumb {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
   position: relative;
   overflow: hidden;
 }
 .portfolio-actions {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-
   position: absolute;
   top: 0;
   left: 0;
